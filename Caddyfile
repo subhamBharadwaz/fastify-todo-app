@@ -1,4 +1,4 @@
-my-todo.tech {
+todo.my-todo.tech {
  reverse_proxy todo-app:4000 {
     header_down Strict-Transport-Security max-age=315363000;
  }
