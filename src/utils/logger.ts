@@ -1,7 +1,7 @@
-import pino from "pino";
+import pino from 'pino';
 
 export const logger = pino({
-  redact: ["hostname"],
+  redact: ['hostname'],
   timestamp() {
     return `, ${new Date().toISOString()}`;
   },

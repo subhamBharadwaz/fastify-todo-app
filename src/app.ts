@@ -1,9 +1,9 @@
-import { config } from "./utils/config";
-import { createServer } from "./utils/createServer";
-import { connectToDb, disconnectFromDb } from "./utils/db";
-import { logger } from "./utils/logger";
+import { config } from './utils/config';
+import { createServer } from './utils/createServer';
+import { connectToDb, disconnectFromDb } from './utils/db';
+import { logger } from './utils/logger';
 
-const signals = ["SIGINT", "SIGTERM", "SIGHUP"] as const;
+const signals = ['SIGINT', 'SIGTERM', 'SIGHUP'] as const;
 
 async function gracefulShutdown({
   signal,
